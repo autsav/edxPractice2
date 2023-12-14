@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+    font-size: 100%;
+    background-color: aliceblue;
+    color: #1f2021;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #cac5c5;
+    margin: 0px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    margin: 1em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+nav ul li a {
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+p {
+    margin-top: 20px;
+}
+
+main {
+    margin: 1em;
+}
+
+footer {
+    padding: 10px;
+    margin-top: auto;
+    background-color: #cac5c5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location,
+.phone,
+.email {
+    margin: 15px;
+}
+
+/* Begin Mobile */
+
+@media screen and (max-width: 640px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 30em;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding: 1em;
+        list-style-type: none;
+        background-color: #dcdedf;
+        border-radius: 1em;
+        color: black; /* Set text color to black */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition on background color and text color */
+        position: relative;
+    }
+
+    nav ul li:hover {
+        background-color: #313334;
+        color: white;
+         /* Change text color to white on hover */
+    }
+    nav ul li:hover a{
+
+        color: white;
+    }
+
+    .location,
+    .phone,
+    .email {
+        margin: 0;
+    }
+}
+/* End mobile */
+/*Begin Tablet*/
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    nav ul li {
+        margin-right: 5px;
+        padding: 1em;
+        list-style-type: none;
+        background-color: #dcdedf;
+        border-radius: 1em;
+        color: black; /* Set text color to black */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition on background color and text color */
+        position: relative;
+    }
+    nav ul li:hover {
+        background-color: #313334;
+        color: white;
+         /* Change text color to white on hover */
+    }
+    nav ul li:hover a{
+
+        color: white;
+    }
+
+    .location,
+    .phone,
+    .email {
+        margin: 0;
+    }
+  
+}
