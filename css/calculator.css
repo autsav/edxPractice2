@@ -1,0 +1,27 @@
+table{
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: rgb(57, 54, 54);
+}
+
+caption{
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    background:  rgb(57, 54, 54);
+    padding: 0.5em;
+    }
+caption input{
+    text-align: right ;
+}
+th, td{
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+input{
+    width: 95%;
+    height: 3em;
+    font-size: 1.5em;
+}
